@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GwParentInfoForm</class>
+ <widget class="QDialog" name="GwParentInfoForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>504</width>
+    <height>593</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Parent Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(31, 0, 0);
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_5">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; text-decoration: underline; color:#ffffff;&quot;&gt;Parent's Data Form&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QLabel" name="label_5">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Student Reg. Num.</string>
+           </property>
+           <property name="buddy">
+            <cstring>regNumEditor</cstring>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="regNumEditor">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(245, 245, 245);
+border-color: rgb(191, 191, 191);</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QLabel" name="label_6">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Student Name</string>
+           </property>
+           <property name="buddy">
+            <cstring>nameEditor</cstring>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="nameEditor">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(245, 245, 245);
+border-color: rgb(191, 191, 191);</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(209, 209, 209);
+color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="title">
+      <string>Parent Data</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>First Name</string>
+          </property>
+          <property name="buddy">
+           <cstring>pFirstNameEditor</cstring>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="pFirstNameEditor">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(245, 245, 245);
+border-color: rgb(191, 191, 191);</string>
+          </property>
+          <property name="placeholderText">
+           <string>Matins</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Last Name</string>
+          </property>
+          <property name="buddy">
+           <cstring>pLastNameEditor</cstring>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="pLastNameEditor">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(245, 245, 245);
+border-color: rgb(191, 191, 191);</string>
+          </property>
+          <property name="placeholderText">
+           <string>Ogbulafor</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Relationship with the Student</string>
+          </property>
+          <property name="buddy">
+           <cstring>pRelationshipComboBox</cstring>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="pRelationshipComboBox">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(245, 245, 245);
+border-color: rgb(191, 191, 191);</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Parent Relationship</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Father</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Mother</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Guardian</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>Occupation</string>
+          </property>
+          <property name="buddy">
+           <cstring>pOcupationEditor</cstring>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="pOcupationEditor">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(245, 245, 245);
+border-color: rgb(191, 191, 191);</string>
+          </property>
+          <property name="placeholderText">
+           <string>Civil Servant</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(209, 209, 209);
+color: rgb(0, 0, 0);
+</string>
+     </property>
+     <property name="title">
+      <string>Home Contact</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_9">
+        <item>
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>Address</string>
+          </property>
+          <property name="buddy">
+           <cstring>pHAddressEditor</cstring>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="pHAddressEditor">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(245, 245, 245);
+border-color: rgb(191, 191, 191);</string>
+          </property>
+          <property name="placeholderText">
+           <string>4 Golde Street</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_20">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <item>
+           <widget class="QLabel" name="label_9">
+            <property name="text">
+             <string>Phone Number</string>
+            </property>
+            <property name="buddy">
+             <cstring>pHPhoneNumEditor</cstring>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="pHPhoneNumEditor">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(245, 245, 245);
+border-color: rgb(191, 191, 191);</string>
+            </property>
+            <property name="placeholderText">
+             <string>08068007085</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_18">
+          <item>
+           <widget class="QLabel" name="label_18">
+            <property name="text">
+             <string>City</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="pHCityEditor">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(245, 245, 245);
+border-color: rgb(191, 191, 191);</string>
+            </property>
+            <property name="placeholderText">
+             <string>Calabar</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_21">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_12">
+          <property name="spacing">
+           <number>30</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_10">
+            <property name="text">
+             <string>State</string>
+            </property>
+            <property name="buddy">
+             <cstring>pHStateComboBox</cstring>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="pHStateComboBox">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(245, 245, 245);
+border-color: rgb(191, 191, 191);</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_11">
+          <property name="spacing">
+           <number>24</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_11">
+            <property name="text">
+             <string>L.G.A.</string>
+            </property>
+            <property name="buddy">
+             <cstring>pHLgaComboBox</cstring>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="pHLgaComboBox">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(245, 245, 245);
+border-color: rgb(191, 191, 191);</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Select Your Local Govt.</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_10">
+        <item>
+         <widget class="QLabel" name="label_12">
+          <property name="text">
+           <string>Email</string>
+          </property>
+          <property name="buddy">
+           <cstring>pHEmailEditor</cstring>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="pHEmailEditor">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(245, 245, 245);
+border-color: rgb(191, 191, 191);</string>
+          </property>
+          <property name="placeholderText">
+           <string>matins_ogbulafor@gmail.com</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(209, 209, 209);
+color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="title">
+      <string>Office Contact</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_13">
+        <item>
+         <widget class="QLabel" name="label_13">
+          <property name="text">
+           <string>Address</string>
+          </property>
+          <property name="buddy">
+           <cstring>pOAddressEditor</cstring>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="pOAddressEditor">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(245, 245, 245);
+border-color: rgb(191, 191, 191);</string>
+          </property>
+          <property name="placeholderText">
+           <string>24 Cliford Road</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_24">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_14">
+          <item>
+           <widget class="QLabel" name="label_14">
+            <property name="text">
+             <string>Phone Number</string>
+            </property>
+            <property name="buddy">
+             <cstring>pOPhoneNumEditor</cstring>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="pOPhoneNumEditor">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(245, 245, 245);
+border-color: rgb(191, 191, 191);</string>
+            </property>
+            <property name="placeholderText">
+             <string>09026728273</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_23">
+          <item>
+           <widget class="QLabel" name="label_20">
+            <property name="text">
+             <string>City</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="pOCityEditor">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(245, 245, 245);
+border-color: rgb(191, 191, 191);</string>
+            </property>
+            <property name="placeholderText">
+             <string>Umuahia</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_25">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_15">
+          <property name="spacing">
+           <number>30</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_15">
+            <property name="text">
+             <string>State</string>
+            </property>
+            <property name="buddy">
+             <cstring>pOStateComboBox</cstring>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="pOStateComboBox">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(245, 245, 245);
+border-color: rgb(191, 191, 191);</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_16">
+          <property name="spacing">
+           <number>25</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_16">
+            <property name="text">
+             <string>L.G.A.</string>
+            </property>
+            <property name="buddy">
+             <cstring>pOLgaComboBox</cstring>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="pOLgaComboBox">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(245, 245, 245);
+border-color: rgb(191, 191, 191);</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Select Your Local Govt.</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_17">
+        <item>
+         <widget class="QLabel" name="label_17">
+          <property name="text">
+           <string>Email</string>
+          </property>
+          <property name="buddy">
+           <cstring>pOEmailEditor</cstring>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="pOEmailEditor">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(245, 245, 245);
+border-color: rgb(191, 191, 191);</string>
+          </property>
+          <property name="placeholderText">
+           <string>macobitlimited@company.com</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_19">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="submitButton">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(0, 85, 255);</string>
+       </property>
+       <property name="text">
+        <string>Submit</string>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="cancelButton">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(226, 25, 7);</string>
+       </property>
+       <property name="text">
+        <string>Cancel</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>regNumEditor</tabstop>
+  <tabstop>nameEditor</tabstop>
+  <tabstop>pFirstNameEditor</tabstop>
+  <tabstop>pLastNameEditor</tabstop>
+  <tabstop>pRelationshipComboBox</tabstop>
+  <tabstop>pOcupationEditor</tabstop>
+  <tabstop>pHAddressEditor</tabstop>
+  <tabstop>pHPhoneNumEditor</tabstop>
+  <tabstop>pHCityEditor</tabstop>
+  <tabstop>pHStateComboBox</tabstop>
+  <tabstop>pHLgaComboBox</tabstop>
+  <tabstop>pHEmailEditor</tabstop>
+  <tabstop>pOAddressEditor</tabstop>
+  <tabstop>pOPhoneNumEditor</tabstop>
+  <tabstop>pOCityEditor</tabstop>
+  <tabstop>pOStateComboBox</tabstop>
+  <tabstop>pOLgaComboBox</tabstop>
+  <tabstop>pOEmailEditor</tabstop>
+  <tabstop>submitButton</tabstop>
+  <tabstop>cancelButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

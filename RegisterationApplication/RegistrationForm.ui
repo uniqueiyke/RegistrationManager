@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RegistrationForm</class>
+ <widget class="QDialog" name="RegistrationForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>406</width>
+    <height>441</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Registration Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);
+background-color: rgb(4, 122, 138);</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_7">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <property name="spacing">
+      <number>20</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:20pt; font-weight:600;&quot;&gt;Registration Form&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>20</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="spacing">
+          <number>6</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="RegNumLabel">
+           <property name="text">
+            <string>Reg. Number</string>
+           </property>
+           <property name="buddy">
+            <cstring>regNumEditor</cstring>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="regNumEditor">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);
+border-color: rgb(193, 193, 193);
+color: rgb(0, 0, 0);</string>
+           </property>
+           <property name="placeholderText">
+            <string>2018/ES0001/NS</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="spacing">
+          <number>29</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="surnameLabel">
+           <property name="text">
+            <string>Surname</string>
+           </property>
+           <property name="buddy">
+            <cstring>surnameEditor</cstring>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="surnameEditor">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);
+border-color: rgb(193, 193, 193);
+color: rgb(0, 0, 0);</string>
+           </property>
+           <property name="placeholderText">
+            <string>Okechukwu</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <property name="spacing">
+          <number>19</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="firstNameLabel">
+           <property name="text">
+            <string>First Name</string>
+           </property>
+           <property name="buddy">
+            <cstring>firstNameEditor</cstring>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="firstNameEditor">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);
+border-color: rgb(193, 193, 193);
+color: rgb(0, 0, 0);</string>
+           </property>
+           <property name="placeholderText">
+            <string>Chidinma</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <property name="spacing">
+          <number>6</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="otherNameLabel">
+           <property name="text">
+            <string>Other Names</string>
+           </property>
+           <property name="buddy">
+            <cstring>otherNamesEditor</cstring>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="otherNamesEditor">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);
+border-color: rgb(193, 193, 193);
+color: rgb(0, 0, 0);</string>
+           </property>
+           <property name="placeholderText">
+            <string>Precious (This field may be blank)</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_5">
+     <property name="spacing">
+      <number>17</number>
+     </property>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_8">
+         <item>
+          <widget class="QGroupBox" name="groupBox">
+           <property name="title">
+            <string>Select Your Gender</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QRadioButton" name="maleRadioButton">
+              <property name="text">
+               <string>Male</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="femaleRadioButton">
+              <property name="text">
+               <string>Female</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <property name="spacing">
+          <number>30</number>
+         </property>
+         <item>
+          <widget class="QComboBox" name="schoolComboBox">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);
+border-color: rgb(193, 193, 193);
+color: rgb(0, 0, 0);</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>Select Your School</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Nursery School</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Primary School</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Secondary School</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="classComboBox">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);
+border-color: rgb(193, 193, 193);
+color: rgb(0, 0, 0);</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>Select Your Class</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_9">
+       <property name="spacing">
+        <number>28</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>First Payment Amount</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDoubleSpinBox" name="firstPaymentDoubleSpinBox">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+border-color: rgb(193, 193, 193);
+color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="maximum">
+          <double>1000000.000000000000000</double>
+         </property>
+         <property name="singleStep">
+          <double>100.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_6">
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>19</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_7">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <property name="spacing">
+          <number>2</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="submitButton">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(0, 85, 0);</string>
+           </property>
+           <property name="text">
+            <string>Submit</string>
+           </property>
+           <property name="default">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="cancelButton">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(211, 0, 0);</string>
+           </property>
+           <property name="text">
+            <string>Cancel</string>
+           </property>
+           <property name="flat">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="clearButton">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(131, 131, 131);</string>
+         </property>
+         <property name="text">
+          <string>Clear</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>regNumEditor</tabstop>
+  <tabstop>surnameEditor</tabstop>
+  <tabstop>firstNameEditor</tabstop>
+  <tabstop>otherNamesEditor</tabstop>
+  <tabstop>maleRadioButton</tabstop>
+  <tabstop>femaleRadioButton</tabstop>
+  <tabstop>schoolComboBox</tabstop>
+  <tabstop>classComboBox</tabstop>
+  <tabstop>submitButton</tabstop>
+  <tabstop>cancelButton</tabstop>
+  <tabstop>clearButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

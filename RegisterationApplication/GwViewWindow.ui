@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GwViewWindow</class>
+ <widget class="QMainWindow" name="GwViewWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>130</y>
+      <width>311</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(52, 52, 52);
+</string>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuTheme">
+    <property name="title">
+     <string>Con&amp;trols</string>
+    </property>
+    <widget class="QMenu" name="menuChange_Theame">
+     <property name="title">
+      <string>Change  Color Theame</string>
+     </property>
+     <addaction name="actionWhite"/>
+     <addaction name="actionBlack"/>
+     <addaction name="actionMagneta"/>
+     <addaction name="actionGold"/>
+    </widget>
+    <addaction name="separator"/>
+    <addaction name="menuChange_Theame"/>
+    <addaction name="actionTabularForm"/>
+   </widget>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionPrintPreview"/>
+    <addaction name="actionPrint"/>
+    <addaction name="actionPrintPDF"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menuTheme"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionWhite">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>White</string>
+   </property>
+   <property name="toolTip">
+    <string>Change to White Theme</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+Shift+W</string>
+   </property>
+  </action>
+  <action name="actionBlack">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Black</string>
+   </property>
+   <property name="toolTip">
+    <string>Chang to Black Theme</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+Shift+B</string>
+   </property>
+  </action>
+  <action name="actionMagneta">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Magneta</string>
+   </property>
+   <property name="toolTip">
+    <string>Change to Magneta Theme</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+Shift+M</string>
+   </property>
+  </action>
+  <action name="actionGold">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Gold</string>
+   </property>
+   <property name="toolTip">
+    <string>Change to  Gold Theme</string>
+   </property>
+  </action>
+  <action name="actionTabularForm">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Tabular Form</string>
+   </property>
+   <property name="toolTip">
+    <string>Switch between tabular torm and text form</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+T</string>
+   </property>
+  </action>
+  <action name="actionPrintPreview">
+   <property name="text">
+    <string>Print Preview</string>
+   </property>
+   <property name="toolTip">
+    <string>Print Preview the document</string>
+   </property>
+  </action>
+  <action name="actionPrint">
+   <property name="text">
+    <string>&amp;Print</string>
+   </property>
+   <property name="toolTip">
+    <string>Print the document</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionPrintPDF">
+   <property name="text">
+    <string>Print PDF</string>
+   </property>
+   <property name="toolTip">
+    <string>Print as a PDF</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,17 @@
+#ifndef GWSPLITTER_H
+#define GWSPLITTER_H
+
+#include <QSplitter>
+
+class GwSplitter : public QSplitter
+{
+    Q_OBJECT
+public:
+    explicit GwSplitter(QWidget *parent = nullptr);
+
+signals:
+
+public slots:
+};
+
+#endif // GWSPLITTER_H

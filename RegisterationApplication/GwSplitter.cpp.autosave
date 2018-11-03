@@ -1,0 +1,6 @@
+#include "GwSplitter.h"
+
+GwSplitter::GwSplitter(QWidget *parent) : QSplitter(parent)
+{
+
+}
